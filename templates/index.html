@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+    <head></head>
+    <body>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Director</th>
+                <th>Actors</th>
+                <th>IMDB Rating</th>
+            </tr>
+            {% for obj in object_list %}
+            <tr>
+                <td>{{ obj.title }}</td>
+                <td>{{ obj.year }}</td>
+                <td>{{ obj.director }}</td>
+                <td>{{ obj.actors }}</td>
+                <td>{{ obj.imdb_rating }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
